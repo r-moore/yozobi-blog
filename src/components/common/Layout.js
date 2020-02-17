@@ -129,7 +129,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     />
                                 </div>
                                 <div className="site-nav-right">
-                                    {/* <Link className="site-nav-button" to="/about">About</Link> */}
+                                    <Link
+                                        className="site-nav-button"
+                                        to="https://www.yozobi.com"
+                                    >
+                                        Main Website
+                                    </Link>
                                 </div>
                             </nav>
                         </div>
