@@ -146,7 +146,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2019 &mdash;
+                                {/* <Link to="/">{site.title}</Link> © 2019 &mdash;
                                 Published with{" "}
                                 <a
                                     className="site-foot-nav-item"
@@ -155,7 +155,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     rel="noopener noreferrer"
                                 >
                                     Ghost
-                                </a>
+                                </a> */}
                             </div>
                             <div className="site-foot-nav-right">
                                 <Navigation
