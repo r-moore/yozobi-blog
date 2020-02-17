@@ -10,7 +10,7 @@
  *
  */
 
-import "prism-theme-night-owl";
+require("prism-theme-night-owl");
 
 var trustAllScripts = function() {
     var scriptNodes = document.querySelectorAll(
