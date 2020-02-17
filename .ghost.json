@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://yozobi.digitalpress.blog",
+    "apiUrl": "https://ghost.yozobi.com",
     "contentApiKey": "651b1194562aa201ed9fa65ea9"
   },
   "production": {
-    "apiUrl": "https://yozobi.digitalpress.blog",
+    "apiUrl": "https://ghost.yozobi.com",
     "contentApiKey": "651b1194562aa201ed9fa65ea9"
   }
 }

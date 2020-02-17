@@ -14,11 +14,14 @@ import { Link } from "gatsby";
  */
 const Navigation = ({ data, navClass }) => (
     <>
-        {data.map((navItem, i) => (
-            <Link className={navClass} to={navItem.url} key={i}>
-                {navItem.label}
-            </Link>
-        ))}
+        {data.map((navItem, i) => {
+            const relativeUrl = navItem.url.replace(/https?:\/\/[^\/]+/i, "");
+            return (
+                <Link className={navClass} to={relativeUrl} key={i}>
+                    {navItem.label}
+                </Link>
+            );
+        })}
     </>
 );
 
