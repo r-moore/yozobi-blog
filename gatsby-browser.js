@@ -9,13 +9,18 @@
  * via ids/classnames etc.
  *
  */
-var trustAllScripts = function () {
-    var scriptNodes = document.querySelectorAll('.load-external-scripts script');
+
+import "prism-theme-night-owl";
+
+var trustAllScripts = function() {
+    var scriptNodes = document.querySelectorAll(
+        ".load-external-scripts script"
+    );
 
     for (var i = 0; i < scriptNodes.length; i += 1) {
         var node = scriptNodes[i];
-        var s = document.createElement('script');
-        s.type = node.type || 'text/javascript';
+        var s = document.createElement("script");
+        s.type = node.type || "text/javascript";
 
         if (node.attributes.src) {
             s.src = node.attributes.src.value;
@@ -23,10 +28,10 @@ var trustAllScripts = function () {
             s.innerHTML = node.innerHTML;
         }
 
-        document.getElementsByTagName('head')[0].appendChild(s);
+        document.getElementsByTagName("head")[0].appendChild(s);
     }
 };
 
-exports.onRouteUpdate = function () {
+exports.onRouteUpdate = function() {
     trustAllScripts();
 };
